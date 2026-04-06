@@ -28,10 +28,21 @@ The focus of this project is to demonstrate clean backend design, proper validat
 
 ## 🚀 Setup Instructions
 
+## 🧩 Project Configuration
+
+This project is built using the following versions and tools:
+
+- **Spring Boot Version:** 3.5.13
+- **Java Version:** 17
+- **Build Tool:** Maven
+- **OpenAPI (Swagger):** 2.8.16
+- **Database:** MySQL
+
+ 
 ### 1. Clone Repository
 
 ```bash
-git clone <your-repo-link>
+git clone https://github.com/Surya-barre/finance-dashboard-backend.git
 cd finance-dashboard-backend
 ```
 
