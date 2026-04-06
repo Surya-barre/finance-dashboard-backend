@@ -107,12 +107,12 @@ public class UserService {
         // ACTIVE FIELD UPDATE - SPECIAL HANDLING
         if (user.getActive() != null) {
 
-            // ❌ true → false not allowed here
+            // true → false not allowed here
             if (existing.getActive() && !user.getActive()) {
                 throw new CustomException("Use deactivate API to deactivate user");
             }
 
-            // ✅ false → true (reactivate allowed)
+            // false → true (reactivate allowed)
             if (!existing.getActive() && user.getActive()) {
                 existing.setActive(true);
             }

@@ -26,9 +26,7 @@ public class FinancialRecordService {
         return repository.save(record);
     }
 
-
-
-
+    // Get all records with pagination
     public Page<FinancialRecord> getAllRecords(int page, int size) {
 
         Pageable pageable = PageRequest.of(page, size);
@@ -111,7 +109,7 @@ public class FinancialRecordService {
         return result;
     }
 
-
+    // filter with pagination
     public Page<FinancialRecord> filterRecords(
             RecordType type,
             String category,
